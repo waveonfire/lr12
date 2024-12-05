@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Language Learning App</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h2>Language Learning App</h2>
+    </div>
+    <div class="levels">
+        <input type="radio" id="beginner" name="level" value="beginner" checked>
+        <label for="beginner">Beginner</label>
+        <input type="radio" id="intermediate" name="level" value="intermediate">
+        <label for="intermediate">Intermediate</label>
+        <input type="radio" id="hard" name="level" value="hard">
+        <label for="hard">Hard</label>
+    </div>
+    <div class="stats" id="stat">
+        <h3>Step 0 of 10 | Correct answers: 0 | Wrong answers: 0</h3>
+    </div>
+    <div class="mainblock">
+        <p>Word</p>
+        <input type="text" id="inputtext">
+        <button id="checkbutton">Check</button>
+    </div>
+    <div id="modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <h2>Quiz Completed!</h2>
+            <p id="result-text"></p>
+            <button id="close-modal">Close</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
